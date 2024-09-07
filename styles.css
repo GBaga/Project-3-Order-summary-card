@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Red Hat Display", "sans-serif";
+    font-size: 10px;
+}
+
+body {
+    height: 709px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: rgba(224, 232, 255, 1);
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media only screen and (min-width: 375px) {
+
+    /* For desktop: */
+    body {
+        height: 100vh;
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+}
+main {
+    width: 327px;
+    height: 567px;
+    box-sizing: border-box;
+    padding: 0px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+
+    /* For desktop: */
+    main {
+        width: 450px;
+        height: 697px;
+    }
+}
+
+
+.illustration-hero {
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main>h1 {
+    color: rgba(31, 46, 85, 1);
+    font-size: 2.2em;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 32px 0px 16px 0px;
+}
+
+@media only screen and (min-width: 375px) {
+
+    /* For desktop: */
+    main>h1 {
+        font-size: 2.8em;
+        font-weight: 900;
+        line-height: 37.04px;
+        margin: 45px 0px 17px 0px;
+    }
+}
+
+main>p {
+    font-family: "Red Hat Display";
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(113, 127, 166, 1);
+}
+
+@media only screen and (min-width: 375px) {
+
+    /* For desktop: */
+    main>p {
+        font-size: 1.6em;
+        line-height: 26px;
+        width: 354px;
+        height: 78px;
+        margin: auto;
+    }
+}
+
+.price-div {
+    /* Rectangle */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px;
+    padding: 17px 16px 16px 16px;
+    background: #F7F9FF;
+    border-radius: 11px;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .price-div {
+        margin: 20px 48px 32px 48px;
+        padding: 25px 24px;
+    }
+}
+
+.price {
+    margin: 0px 50px 0px 20px;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .price {
+        margin: 0px 94px 0px 20px;
+    }
+}
+
+.change {
+    /* Change */
+    height: 17px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #382AE1;
+}
+
+.change:hover {
+    cursor: pointer;
+    color: #766CF1;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .change {
+        /* Change */
+        height: 19px;
+        font-size: 1.4em;
+        line-height: 18.52px;
+    }
+}
+
+.annual-plan {
+    /* 1 Year Plan */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.4em;
+    line-height: 19px;
+    /* identical to box height */
+    color: #1F2E55;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .annual-plan {
+        /* 1 Year Plan */
+        font-size: 1.6em;
+        line-height: 21.17px;
+    }
+}
+
+.numbers {
+    /* $249.99 */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 19px;
+    /* identical to box height */
+    color: #717FA6;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .numbers {
+        /* $249.99 */
+        font-size: 1.6em;
+        line-height: 21.17px;
+    }
+}
+
+button {
+    /* Proceed to Payment */
+    width: 279px;
+    height: 50px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* Center the button horizontally and vertically */
+    margin: auto;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    button {
+        /* Proceed to Payment */
+        width: 354px;
+    }
+}
+
+button:hover {
+    background: rgba(118, 108, 241, 1);
+    cursor: pointer;
+}
+
+.cancel-order {
+    /* Cancel Order */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 20px;
+    /* identical to box height */
+    color: #717FA6;
+    margin: 24px 0px 32px 0px;
+}
+
+.cancel-order:hover {
+    color: rgba(31, 46, 85, 1);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) {
+    /* For desktop: */
+    .cancel-order {
+        /* Cancel Order */
+        width: 96px;
+        height: 20px;
+        margin: 32px 178px 48px 176px;
+    }
+}
+
+body>footer {
+    width: 100%;
+    font-family: "Red Hat Display", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+body>footer>ul {
+    color: #8BACD9;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
